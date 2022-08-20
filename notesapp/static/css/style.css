@@ -1,0 +1,19 @@
+body{
+    background: url("/static/images/bck1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+span{
+padding: 30px;
+}
+
+a{
+text-decoration: none;
+color: #4e4f4f;
+}
+
+td{
+padding: 20px;
+}
+

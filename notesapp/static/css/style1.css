@@ -1,0 +1,9 @@
+body{
+    background: url("/static/images/bck1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.butn{
+text-align: center;
+}

@@ -1,0 +1,28 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block body_block%}
+<link rel="stylesheet" href="{%static 'css/style.css'%}">
+<div class="row">
+        <div class="col-3"></div>
+        <div class="col-7">
+            <table class="table">
+                <tr>
+                    <th>Notes</th>
+                </tr>
+                {%for note in notes%}
+                <tr>
+                    <td>{{note.title}}</td>
+                    <td>{{note.id}}</td>
+                    <td>
+                        <a href="{%url 'note_detail' note.title%}"><span>View</span></a>
+                        <a href="{%url 'note_edit' note.title%}"><span>Edit</span></a>
+                        <a href="{%url 'note_delete' note.title%}"><span>Delete</span></a>
+                    </td>
+                </tr>
+                {%endfor%}
+            </table>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
+{%endblock%}

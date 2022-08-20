@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%load static%}
+{%block body_block%}
+<link rel="stylesheet" href="{%static 'css/style2.css'%}">
+
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+        <h2>{{note.title}}</h2>
+        <img src="{{note.image.url}}" style="height:300px" alt="">
+        <p>{{note.note}}</p>
+    </div>
+    <div class="col-4"></div>
+</div>
+{%endblock%}
